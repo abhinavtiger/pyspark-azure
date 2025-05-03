@@ -1,10 +1,9 @@
 from flask import Flask, request, jsonify
 from azure.storage.blob import BlobServiceClient
-import os
 
 app = Flask(__name__)
 
-# Set your Azure Storage Connection string (or use environment variables)
+# Set Azure Storage Connection string (or use environment variables)
 connection_string = ''
 
 # Initialize BlobServiceClient
@@ -12,12 +11,11 @@ blob_service_client = BlobServiceClient.from_connection_string(connection_string
 
 @app.route('/list-files', methods=['GET'])
 def list_files():
-    folder = request.args.get('folder')  # Get the 'folder' parameter from the URL query string
+    folder = request.args.get('folder') 
 
     if not folder:
         return jsonify({"error": "Folder parameter is required!"}), 400  # Handle missing 'folder' parameter
 
-    # Assuming your container name is 'mycontainer'
     container_name = 'azure-assignment'
 
     try:
@@ -31,4 +29,4 @@ def list_files():
         return jsonify({"error": str(e)}), 500  # Return an error if something goes wrong
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0',port=5000,debug=True)
