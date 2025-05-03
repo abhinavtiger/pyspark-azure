@@ -26,7 +26,7 @@ import os
 app = Flask(__name__)
 
 # Set your Azure Storage Connection string (or use environment variables)
-connection_string = 'DefaultEndpointsProtocol=https;AccountName=abhi1storage;AccountKey=IZuOEWTJz43scAc2KkBKmJn3OV5gB8ziCmjS4LxIjHYTsu9qvkRoqlvJXaSNb7IyUGMHWU25wZE3+AStI2X5hw==;EndpointSuffix=core.windows.net'
+connection_string = ''
 
 # Initialize BlobServiceClient
 blob_service_client = BlobServiceClient.from_connection_string(connection_string)
