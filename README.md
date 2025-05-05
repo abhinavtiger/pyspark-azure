@@ -25,3 +25,12 @@ In order to run the flask app from VM , perform the following steps.
 Below is a screenshot of the billing cost for the `MLE-April-batch` resource group:
 
 ![Billing Screenshot](costanalysis_charts.png)
+
+![Folder1 Screenshot](folder1.png)
+
+![Folder2 Screenshot](folder2.png)
+
+![Folder3 Screenshot](folder3.png)
+
+![Virtual Machine Screenshot](vm.png)
+
