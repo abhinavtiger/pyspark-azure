@@ -26,11 +26,11 @@ Below is a screenshot of the billing cost for the `MLE-April-batch` resource gro
 
 ![Billing Screenshot](costanalysis_charts.png)
 
-![Folder1 Screenshot](folder1.png)
+![Folder1 Screenshot](folder1.PNG)
 
-![Folder2 Screenshot](folder2.png)
+![Folder2 Screenshot](folder2.PNG)
 
-![Folder3 Screenshot](folder3.png)
+![Folder3 Screenshot](folder3.PNG)
 
-![Virtual Machine Screenshot](vm.png)
+![Virtual Machine Screenshot](vm.PNG)
 
